@@ -1,19 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: white;
+    background-repeat: no-repeat;
+    color: #202020;
+    line-height: 1.5;
+    font-weight: 300;
+    width: 100%;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "SF Hello", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+    position: relative;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 h1 {
-    font-size: 5rem;
-    font-weight: 400;
-    margin: 0 0 0.5em;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #666;
+    margin: 0;
     padding: 0;
 }
 
 h2 {
-    font-size: 4rem;
-    font-weight: 300;
-    color: #666;
-    margin: 0;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin: 0 0 0.5em;
     padding: 0;
 }
 
@@ -23,28 +43,60 @@ h3 {
 }
 
 p, ul, ol {
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 1.2rem;
     font-weight: 300;
 }
 
 .content {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 2em 0;
+    position: relative;
+    margin: 6rem auto 1rem;
+    padding: 1rem 2rem;
 }
 
 .swift-logo {
     position: absolute;
-    width: 400px;
-    height: 400px;
+    width: 256px;
+    height: 256px;
     top: -64px;
     right: -64px;
     z-index: -1;
-    opacity: 0.5;
-    transform: rotate(25deg);
+    opacity: 0.25;
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
 }
 
-@media screen {
+@media screen and (min-width: 600px) {
+    h1 {
+        font-size: 3rem;
+    }
 
+    h2 {
+        font-size: 4rem;
+    }
+
+	.content{
+		padding:2em 4em;
+		margin:0 auto
+	}
+}
+
+@media screen and (min-width: 900px){
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 5rem;
+    }
+
+    .content {
+        max-width:960px;
+    }
+
+	.swift-logo{
+		top:-128px;
+		right:-128px;
+		width:512px;
+		height:512px
+	}
 }

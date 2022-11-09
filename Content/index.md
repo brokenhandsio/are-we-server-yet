@@ -1,5 +1,5 @@
-## Are we server yet?
-# Yes! And it's freaking fast!
+# Are we _server_ yet?
+## Yes! And it's freaking fast!
 
 Welcome to the Vapor Documentation! Vapor is a web framework for Swift, allowing you to write backends, web apps APIs and HTTP servers in Swift. Vapor is written in Swift, which is a modern, powerful and safe language providing a number of benefits over the more traditional server languages.
 
