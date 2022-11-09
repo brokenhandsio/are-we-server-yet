@@ -4,3 +4,5 @@
 /.swiftpm
 /*.xcodeproj
 .publish
+Output/
+.vscode/

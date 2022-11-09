@@ -1,0 +1,50 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Hello", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    margin: 0 0 0.5em;
+    padding: 0;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #666;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+p, ul, ol {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+.swift-logo {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: -64px;
+    right: -64px;
+    z-index: -1;
+    opacity: 0.5;
+    transform: rotate(25deg);
+}
+
+@media screen {
+
+}
