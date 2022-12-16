@@ -15,7 +15,8 @@ extension Theme where Site == AreWeServerYet {
                 .head(for: index, on: context.site, stylesheetPaths: ["/styles/styles.css"]),
                 .body(
                     .img(.alt("Swift logo"), .src("/images/swift_logo.svg"), .class("swift-logo")),
-                    .div(.class("content"), .contentBody(index.body))
+                    .div(.class("content"), .contentBody(index.body)),
+                    footer()
                 )
             )
         }
@@ -41,6 +42,17 @@ extension Theme where Site == AreWeServerYet {
 
         func makeTagDetailsHTML(for page: TagDetailsPage, context: PublishingContext<AreWeServerYet>) throws -> HTML? {
             nil
+        }
+
+        func footer() -> Node<HTML.BodyContext> {
+            .div(
+                .class("footer  content"),
+                .ul(
+                    .class("footer-list"),
+                    .li("Copyright © 2022 Server-side Swift Working Group")
+                    // .li(.a(.href("/about"), "About")),
+                )
+            )
         }
     }
 }
