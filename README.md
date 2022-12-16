@@ -9,4 +9,4 @@ This project tries to give the answer to the question, "is [Swift](http://swift.
 All contributions are welcome to the project. The curators try to review all pull requests as quickly as possible. If you are planning on submitting bigger changes to the project, please open a GitHub issue first and talk to the team before submitting to make sure your work will be accepted.
 
 The content of the page is located in the `Content/` directory. It's simple Markdown!
-This project uses [Publish](https://github.com/JohnSundell/Publish), a static HTMl generator.
+This project uses [Publish](https://github.com/JohnSundell/Publish), a static HTML generator.
