@@ -1,20 +1,10 @@
 # Are we _server_ yet?
 ## Yes! And it's freaking fast!
 
-Welcome to the Vapor Documentation! Vapor is a web framework for Swift, allowing you to write backends, web apps APIs and HTTP servers in Swift. Vapor is written in Swift, which is a modern, powerful and safe language providing a number of benefits over the more traditional server languages.
+Swift has a mature and production ready framework in [Vapor](https://vapor.codes), and newer ones like [Hummingbird](https://github.com/hummingbird-project/hummingbird). These provide everything you’d expect from a web framework, from routing and middleware, to templating, and JSON/form handling. There are packages for everything, and more! For databases, there’s:
 
-### Getting Started:
-If this is your first time using Vapor, head to [Install → macOS](https://docs.vapor.codes/install/macos/) to install Swift and Vapor.
+- [Fluent](https://github.com/vapor/fluent-kit) a full-fledged ORM.
+- [Fluent drivers](https://github.com/topics/fluent-driver), a collection of native drivers for SQlite, Postgres and MySQL.
+- [MongoKitten](https://github.com/orlandos-nl/MongoKitten), a fast and pure Swift MongoDB driver
 
-Once you have Vapor installed, check out Getting Started → Hello, world to create your first Vapor app!
-
-- MongoDB
-- SQLite
-- Fluent
-
-John Doe Foo Bar:
-
-- MySQL
-- Postgres
-- Redis
-- Queues
+And of course, there is plenty of support for basic web needs, like [logging](https://github.com/apple/swift-log) or [templating](https://github.com/JohnSundell/Plot).
