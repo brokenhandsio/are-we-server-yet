@@ -14,9 +14,10 @@ struct AreWeServerYet: Website {
     }
 
     // Update these properties to configure your website:
-    var url = URL(string: "https://your-website-url.com")!
+    var url = URL(string: "https://areweserveryet.org")!
     var name = "AreWeServerYet"
-    var description = "A description of AreWeServerYet"
+    // swiftlint:disable:next line_length
+    var description = "Are We Server Yet - or AWSY for short - tries to answer the question: Can I use Swift on servers (yet)?"
     var language: Language { .english }
     var imagePath: Path? { nil }
 }
