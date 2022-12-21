@@ -44,6 +44,7 @@ Resources:
         # DefaultRootObject: index.html
         Aliases:
         - !Ref 'DomainName'
+        # - !Join [ '', [ 'www.', !Ref 'DomainName' ]]
         CustomErrorResponses:
           - ErrorCode: 403
             ResponseCode: 404
@@ -100,6 +101,36 @@ Resources:
             ModeBlock: true
             Protection: true
             Override: false
+  WebsiteRoute53:
+    Type: AWS::Route53::RecordSetGroup
+    Properties:
+      HostedZoneId: Z05116532RL9IYBYJ5EC5
+      RecordSets:
+      - Name: www.areweserveryet.org
+        Type: A
+        AliasTarget:
+          DNSName: !GetAtt WebsiteCloudfront.DomainName
+          EvaluateTargetHealth: false
+          HostedZoneId: Z2FDTNDATAQYW2 # From AWS docs: This is always the hosted zone ID when you create an alias record that routes traffic to a CloudFront distribution.
+      - Name: www.areweserveryet.org
+        Type: AAAA
+        AliasTarget:
+          DNSName: !GetAtt WebsiteCloudfront.DomainName
+          EvaluateTargetHealth: false
+          HostedZoneId: Z2FDTNDATAQYW2 # From AWS docs: This is always the hosted zone ID when you create an alias record that routes traffic to a CloudFront distribution.
+      - Name: areweserveryet.org
+        Type: A
+        AliasTarget:
+          DNSName: !GetAtt WebsiteCloudfront.DomainName
+          EvaluateTargetHealth: false
+          HostedZoneId: Z2FDTNDATAQYW2 # From AWS docs: This is always the hosted zone ID when you create an alias record that routes traffic to a CloudFront distribution.
+      - Name: areweserveryet.org
+        Type: AAAA
+        AliasTarget:
+          DNSName: !GetAtt WebsiteCloudfront.DomainName
+          EvaluateTargetHealth: false
+          HostedZoneId: Z2FDTNDATAQYW2 # From AWS docs: This is always the hosted zone ID when you create an alias record that routes traffic to a CloudFront distribution.
+
 Outputs:
   CloudfrontURL:
     Description: 'Cloudfront URL'
