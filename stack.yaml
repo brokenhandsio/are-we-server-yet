@@ -44,7 +44,7 @@ Resources:
         # DefaultRootObject: index.html
         Aliases:
         - !Ref 'DomainName'
-        # - !Join [ '', [ 'www.', !Ref 'DomainName' ]]
+        - !Join [ '', [ 'www.', !Ref 'DomainName' ]]
         CustomErrorResponses:
           - ErrorCode: 403
             ResponseCode: 404
