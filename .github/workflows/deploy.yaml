@@ -53,11 +53,11 @@ jobs:
         AWS_REGION: '${{ env.S3_BUCKET_REGION }}'
         SOURCE_DIR: 'Output'
       if: steps.clouddeploy.outcome == 'success'
-    # - name: Invalidate CloudFront
-    #   uses: awact/cloudfront-action@master
-    #   env:
-    #     SOURCE_PATH: '/*'
-    #     AWS_REGION: 'eu-west-2'
-    #     AWS_ACCESS_KEY_ID: ${{ secrets.DEPLOYER_AWS_ACCESS_KEY_ID }}
-    #     AWS_SECRET_ACCESS_KEY: ${{ secrets.DEPLOYER_AWS_SECRET_ACCESS_KEY }}
-    #     DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
+    - name: Invalidate
+      run: |
+        aws cloudfront create-invalidation \
+          --distribution-id ${{ steps.clouddeploy.outputs.CloudFrontID }} \
+          --paths '/*'
+        aws cloudfront create-invalidation \
+          --distribution-id ${{ steps.clouddeploy.outputs.CloudFrontApexID }} \
+          --paths '/*'

@@ -148,6 +148,12 @@ Outputs:
   CloudfrontURL:
     Description: 'Cloudfront URL'
     Value: !GetAtt WebsiteCloudfront.DomainName
+  CloudFrontID:
+    Description: 'CloudFront distribution id'
+    Value: !GetAtt WebsiteCloudfront.Id
+  CloudFrontApexID:
+    Description: 'CloudFront apex distribution id'
+    Value: !GetAtt WebsiteCloudfront.Id
   ApexCloudfrontURL:
     Description: 'Cloudfront APEX URL'
     Value: !GetAtt WebsiteApexCloudfront.DomainName
