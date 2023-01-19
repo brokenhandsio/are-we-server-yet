@@ -8,6 +8,7 @@ on:
 env:
   DOMAIN_NAME: areweserveryet.org
   S3_BUCKET_NAME: areweserveryet
+  S3_APEX_BUCKET_NAME: areweserveryet-apex
   S3_BUCKET_REGION: us-east-1
   FORMATION_STACK: areweserveryet-stack
 
@@ -37,6 +38,7 @@ jobs:
         parameter-overrides: >-
           DomainName=${{ env.DOMAIN_NAME }},
           S3BucketName=${{ env.S3_BUCKET_NAME }},
+          S3ApexBucketName=${{ env.S3_APEX_BUCKET_NAME }},
           AcmCertificateArn=${{ secrets.CERTIFICATE_ARN }}
       if: steps.cred.outcome == 'success'
     - name: Deploy to S3
