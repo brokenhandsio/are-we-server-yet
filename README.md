@@ -21,7 +21,7 @@ This project is managed under an adapted [Contributor Convenant](http://contribu
 
 ## License
 
-![](https://img.shields.io/github/license/brokenhands/areweserveryet.svg?style=flat-square)
+![](https://img.shields.io/github/license/brokenhands/are-we-server-yet.svg?style=flat-square)
 
 The project and all its work is published under the Creative Commons Attribution 4.0 International License. To learn more about the conditions of that License, please refer to the [LICENSE](LICENSE) document in this folder.
 
