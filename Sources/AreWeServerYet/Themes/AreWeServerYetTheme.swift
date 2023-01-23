@@ -13,11 +13,13 @@ extension Theme where Site == AreWeServerYet {
             HTML(
                 .lang(.english),
                 .head(for: index, on: context.site, stylesheetPaths: ["/styles/styles.css"]),
-                .body(
-                    .img(.alt("Swift logo"), .src("/images/swift_logo.svg"), .class("swift-logo")),
-                    .div(.class("content"), .contentBody(index.body)),
+                .body {
+                    Image(url: "/images/swift_logo.svg", description: "Swift logo").class("swift-logo")
+                    Div {
+                        Node.contentBody(index.body)
+                    }.class("content")
                     footer()
-                )
+                }
             )
         }
 
@@ -44,15 +46,14 @@ extension Theme where Site == AreWeServerYet {
             nil
         }
 
-        func footer() -> Node<HTML.BodyContext> {
-            .div(
-                .class("footer  content"),
-                .ul(
-                    .class("footer-list"),
-                    .li("Copyright © 2022 Server-side Swift Working Group")
-                    // .li(.a(.href("/about"), "About")),
-                )
-            )
+        func footer() -> Component {
+            Div {
+                List {
+                    ListItem {
+                        Text("Copyright © 2022 Server-side Swift Working Group")
+                    }
+                }.class("footer-list")
+            }.class("footer content")
         }
     }
 }
