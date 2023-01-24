@@ -60,6 +60,9 @@ extension Theme where Site == AreWeServerYet {
                         Link("Broken Hands", url: "https://www.brokenhands.io").linkTarget(.blank)
                         Text(" project")
                     }
+                    ListItem {
+                        Text("Swift and the Swift logo are trademarks of Apple Inc., registered in the U.S. and other countries")
+                    }
                 }.class("footer-list")
             }.class("footer content")
         }
