@@ -45,6 +45,8 @@ Once you've set up Swift and have worked through the [Swift Book](https://docs.s
 - [Server-Side Swift with Vapor](https://www.kodeco.com/books/server-side-swift-with-vapor/v3.0) - the Vapor book written by the Vapor Core Team
 - [Practical Server Side Swift](https://theswiftdev.gumroad.com/l/practical-server-side-swift) - an up to date book on building Swift on the server applications
 
+If you find yourself stuck and looking for help, you can check out the official [Swift forums](https://forums.swift.org), the [Swift Server tag on Stackoverflow](https://stackoverflow.com/questions/tagged/swift-server), or the [Swift Open Source Slack](https://join.slack.com/t/swift-server/shared_invite/zt-1a3hxb9r5-8sFU3D7JUvaP5QO1AjSivg) where you are welcome to post your questions and will find excellent help.
+
 ### Thanks
 
 This project is heavily inspired by Rust's [Are we web yet?](https://www.arewewebyet.org) project.
