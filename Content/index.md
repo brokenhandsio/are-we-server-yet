@@ -41,6 +41,14 @@ There are some [awesome projects](https://github.com/swiftwasm/awesome-swiftwasm
 
 For more information about Swift and WebAssembly, check out the [Swift and WebAssembly Book](https://book.swiftwasm.org).
 
+### Serverless?
+
+Running and managing your own servers can be complex! Cloud providers like AWS offer managed services, including databases like [DynamoDB](https://aws.amazon.com/dynamodb/). These take care of most, if not all of the operational burden. This is particularly nice for small systems, because many of these have a free tier. Serverless does come with trade-offs, but it could be worth taking a look, especially if you are cost-sensitive.
+
+- [AWS Lambda](https://github.com/swift-server/swift-aws-lambda-runtime)
+- [AWS Lambda Events](https://github.com/swift-server/swift-aws-lambda-events)
+- [Cassandra Driver](https://github.com/apple/swift-cassandra-client)
+
 ### Getting Started
 
 Once you've set up Swift and have worked through the [Swift Book](https://docs.swift.org/swift-book/), you might want to check out these resources:
