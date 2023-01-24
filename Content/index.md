@@ -20,7 +20,12 @@ There are many integrations to third-party services, such as:
 - [Redis](https://gitlab.com/mordil/RediStack)
 - [ElasticSearch](https://github.com/brokenhandsio/elasticsearch-nio-client)
 
-And of course, there is plenty of support for basic web needs, like [logging](https://github.com/apple/swift-log) or [templating](https://github.com/JohnSundell/Plot).
+And of course, there is plenty of support for basic web needs, like:
+
+- [Logging](https://github.com/apple/swift-log)
+- [Authentication](https://github.com/vapor/jwt)
+- Templating such as [Leaf](https://github.com/vapor/leaf) or [Plot](https://github.com/JohnSundell/Plot)
+- [Job Queues](https://github.com/vapor/queues)
 
 ### Can I replace my Rails/Django/Laravel app already?
 
