@@ -13,7 +13,7 @@ extension Theme where Site == AreWeServerYet {
         func makeIndexHTML(for index: Index, context: PublishingContext<AreWeServerYet>) throws -> HTML {
             HTML(
                 .lang(.english),
-                .head(for: index, on: context.site, stylesheetPaths: ["/styles/styles.css"]),
+                .head(for: index, on: context.site, stylesheetPaths: ["/styles/styles.css", "/styles/gh-fork-ribbon.css"]),
                 .body {
                     Image(url: "/images/swift_logo.svg", description: "Swift logo").class("swift-logo")
                     Div {
