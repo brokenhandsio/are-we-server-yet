@@ -23,4 +23,9 @@ struct AreWeServerYet: Website {
 }
 
 // This will generate your website using the built-in Foundation theme:
-try AreWeServerYet().publish(withTheme: .areWeServerYet)
+@main
+struct AreWeServerYetPublish {
+    static func main() throws {
+        try AreWeServerYet().publish(withTheme: .areWeServerYet)
+    }
+}

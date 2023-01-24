@@ -1,4 +1,4 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.7
 
 import PackageDescription
 
@@ -12,12 +12,12 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(name: "Publish", url: "https://github.com/johnsundell/publish.git", from: "0.8.0")
+        .package(url: "https://github.com/johnsundell/publish.git", from: "0.8.0")
     ],
     targets: [
         .executableTarget(
             name: "AreWeServerYet",
-            dependencies: ["Publish"]
+            dependencies: [.product(name: "Publish", package: "publish")]
         )
     ]
 )
