@@ -29,7 +29,7 @@ And of course, there is plenty of support for basic web needs, like:
 
 ### Can I replace my Rails/Django/Laravel app already?
 
-Yes! Swift's most popular framework is [Vapor](https://www.vapor.codes) and was inspired by Rails and Laravel in it's early days. It provides everything you need to create full-featured applications. If you want something a bit more modular then check out [Smoke](https://github.com/amzn/smoke-framework) or [Hummingbird](https://github.com/hummingbird-project/hummingbird).
+Yes! Swift's most popular framework is [Vapor](https://www.vapor.codes) and was inspired by Rails and Laravel in its early days. It provides everything you need to create full-featured applications. If you want something a bit more modular then check out [Smoke](https://github.com/amzn/smoke-framework) or [Hummingbird](https://github.com/hummingbird-project/hummingbird).
 
 The server-side Swift ecosystem is built on top of [SwiftNIO](https://github.com/apple/swift-nio) and many packages from database drivers to API integrations are built on top of this and will work with any framework.
 
