@@ -19,6 +19,7 @@ There are many integrations to third-party services, such as:
 - [Google Cloud](https://github.com/vapor-community/google-cloud)
 - [Redis](https://gitlab.com/mordil/RediStack)
 - [ElasticSearch](https://github.com/brokenhandsio/elasticsearch-nio-client)
+- [Cassandra](https://github.com/apple/swift-cassandra-client)
 
 And of course, there is plenty of support for basic web needs, like:
 
@@ -43,11 +44,12 @@ For more information about Swift and WebAssembly, check out the [Swift and WebAs
 
 ### Serverless?
 
-Running and managing your own servers can be complex! Cloud providers like AWS offer managed services, including databases like [DynamoDB](https://aws.amazon.com/dynamodb/). These take care of most, if not all of the operational burden. This is particularly nice for small systems, because many of these have a free tier. Serverless does come with trade-offs, but it could be worth taking a look, especially if you are cost-sensitive.
+Running and managing your own servers can be complex! Cloud providers offer managed services that take care of most, if not all of the operational burden. This is particularly nice for small systems, because many of these have a free tier.
 
 - [AWS Lambda](https://github.com/swift-server/swift-aws-lambda-runtime)
 - [AWS Lambda Events](https://github.com/swift-server/swift-aws-lambda-events)
-- [Cassandra Driver](https://github.com/apple/swift-cassandra-client)
+- [Deploy to Vercel](https://github.com/swift-cloud/Vercel)
+- [Deploy to Fastly Compute@Edge](https://github.com/swift-cloud/Compute)
 
 ### Getting Started
 
