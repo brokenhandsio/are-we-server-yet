@@ -58,6 +58,3 @@ jobs:
         aws cloudfront create-invalidation \
           --distribution-id ${{ steps.clouddeploy.outputs.CloudFrontID }} \
           --paths '/*'
-        aws cloudfront create-invalidation \
-          --distribution-id ${{ steps.clouddeploy.outputs.CloudFrontApexID }} \
-          --paths '/*'

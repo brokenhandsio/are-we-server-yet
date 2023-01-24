@@ -172,3 +172,8 @@ Resources:
           DNSName: !GetAtt WebsiteApexCloudfront.DomainName
           EvaluateTargetHealth: false
           HostedZoneId: Z2FDTNDATAQYW2 # From AWS docs: This is always the hosted zone ID when you create an alias record that routes traffic to a CloudFront distribution.
+
+Outputs:
+  CloudFrontID:
+    Description: 'CloudFront distribution id'
+    Value: !GetAtt WebsiteCloudfront.Id
