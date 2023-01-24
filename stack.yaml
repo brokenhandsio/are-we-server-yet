@@ -112,7 +112,7 @@ Resources:
     Type: AWS::CloudFront::ResponseHeadersPolicy
     Properties:
       ResponseHeadersPolicyConfig:
-        Name: AreWeServerYet-Security-Header-Policy
+        Name: AreWeServerYet-SecurityHeaderPolicy
         Comment: The AreWeServerYet security header policy
         CustomHeadersConfig:
           Items:
@@ -172,20 +172,3 @@ Resources:
           DNSName: !GetAtt WebsiteApexCloudfront.DomainName
           EvaluateTargetHealth: false
           HostedZoneId: Z2FDTNDATAQYW2 # From AWS docs: This is always the hosted zone ID when you create an alias record that routes traffic to a CloudFront distribution.
-
-Outputs:
-  CloudfrontURL:
-    Description: 'Cloudfront URL'
-    Value: !GetAtt WebsiteCloudfront.DomainName
-  CloudFrontID:
-    Description: 'CloudFront distribution id'
-    Value: !GetAtt WebsiteCloudfront.Id
-  CloudFrontApexID:
-    Description: 'CloudFront apex distribution id'
-    Value: !GetAtt WebsiteCloudfront.Id
-  ApexCloudfrontURL:
-    Description: 'Cloudfront APEX URL'
-    Value: !GetAtt WebsiteApexCloudfront.DomainName
-  BucketName:
-    Value: !Ref 'S3BucketForWebsiteContent'
-    Description: Name of S3 bucket to hold website content
