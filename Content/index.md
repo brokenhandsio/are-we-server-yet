@@ -32,7 +32,7 @@ The server-side Swift ecosystem is built on top of [SwiftNIO](https://github.com
 
 Swift can run in the browser by compiling to [WebAssembly](https://swiftwasm.org)! This is still experimental and hasn't been upstreamed into Swift yet. However, if has a load of features and can integrate with Javascript. 
 
-There are some [awesome projects](https://github.com/swiftwasm/awesome-swiftwasm) that really showcase SwiftWASM including [Tokamak](https://github.com/TokamakUI/Tokamak) that allows you to build web apps using Swift and SwiftUI!
+There are some [awesome projects](https://github.com/swiftwasm/awesome-swiftwasm) that really showcase SwiftWasm including [Tokamak](https://github.com/TokamakUI/Tokamak) that allows you to build web apps using Swift and SwiftUI!
 
 For more information about Swift and WebAssembly, check out the [Swift and WebAssembly Book](https://book.swiftwasm.org).
 
