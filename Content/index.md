@@ -19,6 +19,7 @@ There are many integrations to third-party services, such as:
 - [Google Cloud](https://github.com/vapor-community/google-cloud)
 - [Redis](https://gitlab.com/mordil/RediStack)
 - [ElasticSearch](https://github.com/brokenhandsio/elasticsearch-nio-client)
+- [Cassandra](https://github.com/apple/swift-cassandra-client)
 
 And of course, there is plenty of support for basic web needs, like:
 
@@ -40,6 +41,15 @@ Swift can run in the browser by compiling to [WebAssembly](https://swiftwasm.org
 There are some [awesome projects](https://github.com/swiftwasm/awesome-swiftwasm) that really showcase SwiftWasm including [Tokamak](https://github.com/TokamakUI/Tokamak) that allows you to build web apps using Swift and SwiftUI!
 
 For more information about Swift and WebAssembly, check out the [Swift and WebAssembly Book](https://book.swiftwasm.org).
+
+### Serverless?
+
+Running and managing your own servers can be complex! Cloud providers offer managed services that take care of most, if not all of the operational burden. This is particularly nice for small systems, because many of these have a free tier.
+
+- [AWS Lambda](https://github.com/swift-server/swift-aws-lambda-runtime)
+- [AWS Lambda Events](https://github.com/swift-server/swift-aws-lambda-events)
+- [Deploy to Vercel](https://github.com/swift-cloud/Vercel)
+- [Deploy to Fastly Compute@Edge](https://github.com/swift-cloud/Compute)
 
 ### Getting Started
 
