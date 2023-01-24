@@ -24,7 +24,7 @@ And of course, there is plenty of support for basic web needs, like:
 
 - [Logging](https://github.com/apple/swift-log)
 - [Authentication](https://github.com/vapor/jwt)
-- Templating ([native](https://github.com/vapor/leaf) or [others](https://github.com/JohnSundell/Plot))
+- Templating such as [Leaf](https://github.com/vapor/leaf) or [Plot](https://github.com/JohnSundell/Plot)
 - [Job Queues](https://github.com/vapor/queues)
 
 ### Can I replace my Rails/Django/Laravel app already?
