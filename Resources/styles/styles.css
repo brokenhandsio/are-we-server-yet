@@ -59,11 +59,12 @@ p, ul, ol {
     height: 126px;
 }
 
+.footer {
+    text-align: center;
+}
+
 .footer > ul {
-    display: flex;
     justify-content: space-around;
-    flex-direction: column;
-    width: 100%;
     margin: 0;
     padding: 0;
     font-size: 0.9rem;
@@ -101,9 +102,5 @@ p, ul, ol {
 
     .content {
         max-width:960px;
-    }
-
-    .footer > ul {
-        flex-direction: row;
     }
 }

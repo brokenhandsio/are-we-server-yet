@@ -1,5 +1,6 @@
 import Publish
 import Plot
+import Foundation
 
 extension Theme where Site == AreWeServerYet {
     static var areWeServerYet: Self {
@@ -47,10 +48,17 @@ extension Theme where Site == AreWeServerYet {
         }
 
         func footer() -> Component {
-            Div {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "d MMMM yyyy"
+            return Div {
                 List {
                     ListItem {
-                        Text("Copyright © 2022 Server-side Swift Working Group")
+                        Text("Last updated \(formatter.string(from: Date())) - CC-BY-4.0")
+                    }
+                    ListItem {
+                        Text("A ")
+                        Link("Broken Hands", url: "https://www.brokenhands.io").linkTarget(.blank)
+                        Text(" project")
                     }
                 }.class("footer-list")
             }.class("footer content")
