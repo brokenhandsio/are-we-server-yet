@@ -59,6 +59,7 @@ Once you've set up Swift and have worked through the [Swift Book](https://docs.s
 - WWDC's [Use Xcode for server-side Swift development](https://developer.apple.com/videos/play/wwdc2022/110360/) video.
 - [Server-Side Swift with Vapor](https://www.kodeco.com/books/server-side-swift-with-vapor/v3.0) - the Vapor book written by the Vapor Core Team
 - [Practical Server Side Swift](https://theswiftdev.gumroad.com/l/practical-server-side-swift) - an up to date book on building Swift on the server applications
+- [Swift for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=sswg.swift-lang) - an extension that adds language support for Swift to Visual Studio Code
 
 If you find yourself stuck and looking for help, you can check out the official [Swift forums](https://forums.swift.org), the [Swift Server tag on Stackoverflow](https://stackoverflow.com/questions/tagged/swift-server), or the [Swift Open Source Slack](https://join.slack.com/t/swift-server/shared_invite/zt-1a3hxb9r5-8sFU3D7JUvaP5QO1AjSivg) where you are welcome to post your questions and will find excellent help.
 
