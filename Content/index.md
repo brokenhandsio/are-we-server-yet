@@ -28,6 +28,8 @@ And of course, there is plenty of support for basic web needs, like:
 - Templating such as [Leaf](https://github.com/vapor/leaf) or [Plot](https://github.com/JohnSundell/Plot)
 - [Job Queues](https://github.com/vapor/queues)
 
+For more packages, check out the [Swift Package Index](https://swiftpackageindex.com/)
+
 ### Can I replace my Rails/Django/Laravel app already?
 
 Yes! Swift's most popular framework is [Vapor](https://www.vapor.codes) and was inspired by Rails and Laravel in its early days. It provides everything you need to create full-featured applications. If you want something a bit more modular then check out [Smoke](https://github.com/amzn/smoke-framework) or [Hummingbird](https://github.com/hummingbird-project/hummingbird).
