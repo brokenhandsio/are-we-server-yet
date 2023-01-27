@@ -28,7 +28,7 @@ And of course, there is plenty of support for basic web needs, like:
 - Templating such as [Leaf](https://github.com/vapor/leaf) or [Plot](https://github.com/JohnSundell/Plot)
 - [Job Queues](https://github.com/vapor/queues)
 
-For more packages, check out the [Swift Package Index](https://swiftpackageindex.com/)
+For more packages, check out the [Swift Package Index](https://swiftpackageindex.com/)!
 
 ### Can I replace my Rails/Django/Laravel app already?
 
