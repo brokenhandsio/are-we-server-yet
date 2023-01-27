@@ -15,7 +15,7 @@ Swift has a mature and production ready framework in [Vapor](https://www.vapor.c
 
 There are many integrations to third-party services, such as:
 
-- [Soto](https://soto.codes)
+- [Soto](https://soto.codes) (AWS)
 - [Google Cloud](https://github.com/vapor-community/google-cloud)
 - [Redis](https://gitlab.com/mordil/RediStack)
 - [ElasticSearch](https://github.com/brokenhandsio/elasticsearch-nio-client)
