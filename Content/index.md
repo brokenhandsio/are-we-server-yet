@@ -53,6 +53,10 @@ Running and managing your own servers can be complex! Cloud providers offer mana
 - [Deploy to Vercel](https://github.com/swift-cloud/Vercel)
 - [Deploy to Fastly Compute@Edge](https://github.com/swift-cloud/Compute)
 
+### Tooling
+
+- [Swift for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=sswg.swift-lang) - an extension that adds language support for Swift to Visual Studio Code
+
 ### Getting Started
 
 Once you've set up Swift and have worked through the [Swift Book](https://docs.swift.org/swift-book/), you might want to check out these resources:
