@@ -28,6 +28,14 @@ And of course, there is plenty of support for basic web needs, like:
 - Templating such as [Leaf](https://github.com/vapor/leaf) or [Plot](https://github.com/JohnSundell/Plot)
 - [Job Queues](https://github.com/vapor/queues)
 
+There's also support for large scale applications, such as:
+
+- [gRPC](https://github.com/grpc/grpc-swift)
+- [Protobuf](https://github.com/apple/swift-protobuf)
+- [Metrics](https://github.com/apple/swift-metrics)
+- [Tracing](https://github.com/apple/swift-distributed-tracing)
+- [Logging](https://github.com/apple/swift-log)
+
 For more packages, check out the [Swift Package Index](https://swiftpackageindex.com/)!
 
 ### Can I replace my Rails/Django/Laravel app already?
