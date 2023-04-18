@@ -60,7 +60,7 @@ Running and managing your own servers can be complex! Cloud providers offer mana
 - [AWS Lambda Events](https://github.com/swift-server/swift-aws-lambda-events)
 - [Deploy to Vercel](https://github.com/swift-cloud/Vercel)
 - [Deploy to Fastly Compute@Edge](https://github.com/swift-cloud/Compute)
-- [Breeze](https://github.com/swift-sprinter/Breeze.git)
+- [Breeze](https://github.com/swift-sprinter/Breeze)
 
 ### Tooling
 
