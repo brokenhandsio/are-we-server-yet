@@ -11,6 +11,12 @@ env:
   S3_APEX_BUCKET_NAME: areweserveryet-apex
   S3_BUCKET_REGION: us-east-1
   FORMATION_STACK: areweserveryet-stack
+  AWS_ROLE: arn:aws:iam::478978960893:role/areweserveryet-github-ci
+  AWS_REGION: eu-west-2
+
+permissions:
+  id-token: write
+  contents: read
 
 jobs:
   build:
@@ -25,9 +31,9 @@ jobs:
       id: cred
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        aws-access-key-id: ${{ secrets.DEPLOYER_AWS_ACCESS_KEY_ID }}
-        aws-secret-access-key: ${{ secrets.DEPLOYER_AWS_SECRET_ACCESS_KEY }}
-        aws-region: 'eu-west-2'
+        role-to-assume: ${{ env.AWS_ROLE }}
+        role-session-name: deploymain
+        aws-region: ${{ env.AWS_REGION }}
     - name: Deploy to AWS Cloudformation
       id: clouddeploy
       uses: aws-actions/aws-cloudformation-github-deploy@v1.0.3
